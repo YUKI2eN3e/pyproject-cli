@@ -1,0 +1,97 @@
+set windows-shell := {{ windows_shell }}
+
+_default: tasks
+
+# List tasks
+tasks:
+	@just --list --unsorted
+
+_setup_poetry:
+	@poetry install
+
+# SetUp project
+setup: _setup_poetry
+{% if mypy %}
+	(just mypy 2> /dev/null ; yes | poetry run mypy --install-types)
+{% endif %}
+{% if pre_commit %}
+	@poetry run pre-commit install
+{% endif %}
+
+{% if ipython %}
+# Run ipython
+ipython:
+	@poetry run ipython
+
+{% endif %}
+{% if ruff %}
+# Run 'ruff'
+ruff *args:
+	@poetry run ruff {{ '{{' args '}}' }} .
+
+# 'ruff --fix'
+ruff-fix:
+	@just ruff --fix
+
+# Run organize imports and format all code
+format:
+	@just ruff check --select I --fix
+	@just ruff format
+
+{% endif %}
+{% if black and isort %}
+# Organize imports and format all code
+format:
+	@poetry run isort .
+	@poetry run black .
+
+{% endif %}
+{% if black and not isort %}
+# Format all code
+format:
+	@poetry run black .
+
+{% endif %}
+{% if mypy %}
+# Run mypy
+mypy *args:
+	@poetry run mypy {{ '{{' args '}}' }} .
+
+{% endif %}
+# Lint code
+lint: format
+{% if ruff %}
+	@just ruff check
+{% endif %}
+{% if mypy %}
+	@just mypy
+{% endif %}
+
+# Run
+run *args:
+	@poetry run {{ script_name }} {{ '{{' args '}}' }}
+
+{% if rich_argparse %}
+# Update the Usage img in README.md
+_update_readme:
+	COLUMNS=$(COLUMNS=$(tput cols) just run --help | head -n 1 | wc -c) just run --make-help-preview
+
+{% endif %}
+# Build project
+build: _setup_poetry
+{% if rich_argparse %}
+	@just _update_readme
+{% endif %}
+	@poetry build
+
+# Install program using pipx
+install: build
+	@py -m pipx install ./dist/`ls -t dist | head -n2 | grep whl`
+
+# Uninstall program using pipx
+uninstall:
+	@py -m pipx uninstall {{ project_name }}
+
+# Reinstall program using pipx
+reinstall: uninstall
+	@just install

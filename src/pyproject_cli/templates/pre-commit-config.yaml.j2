@@ -1,0 +1,71 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: local
+    hooks:
+    -   id: poetry-check
+        name: poetry-check
+        description: run poetry check to validate config
+        entry: poetry check
+        language: python
+        pass_filenames: false
+        files: ^(.*/)?pyproject.toml$
+
+{% if isort %}
+    -   id: isort
+        name: isort
+        description: run isort to sort imports
+        entry: poetry run isort
+        args: []
+        require_serial: true
+        language: python
+        types: [python]
+        args: ["--filter-files"]
+        language: system
+
+{% endif %}
+{% if black %}
+    -   id: black
+        name: black
+        description: run black to format code
+        entry: poetry run black
+        args: ["."]
+        language: system
+        types: [python]
+
+{% endif %}
+{% if ruff %}
+    -   id: ruff-sort
+        name: ruff-sort
+        description: run ruff to sort code
+        entry: poetry run ruff
+        args: ["check", "--select", "I", "--fix", "."]
+        language: system
+        types: [python]
+
+    -   id: ruff-format
+        name: ruff-format
+        description: run ruff to format code
+        entry: poetry run ruff
+        args: ["format", "."]
+        language: system
+        types: [python]
+
+    -   id: ruff-check
+        name: ruff-check
+        description: run ruff to lint code
+        entry: poetry run ruff
+        args: ["check", "."]
+        language: system
+        types: [python]
+
+{% endif %}
+{% if mypy %}
+    -   id: mypy
+        name: mypy
+        description: run mypy to typecheck code
+        entry: poetry run mypy
+        args: []
+        language: system
+        types: [python]
+{% endif %}
