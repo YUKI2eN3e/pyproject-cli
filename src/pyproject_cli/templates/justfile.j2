@@ -1,5 +1,6 @@
-set windows-shell := {{ windows_shell }}
+{% if windows_shell %}set windows-shell := {{ windows_shell }}
 
+{% endif -%}
 _default: tasks
 
 # List tasks
@@ -11,23 +12,25 @@ _setup_poetry:
 
 # SetUp project
 setup: _setup_poetry
-{% if mypy %}
-	(just mypy 2> /dev/null ; yes | poetry run mypy --install-types)
-{% endif %}
-{% if pre_commit %}
-	@poetry run pre-commit install
-{% endif %}
+{% if mypy %}	(just mypy 2> /dev/null ; yes | poetry run mypy --install-types){% endif %}
+{% if pre_commit %}	@poetry run pre-commit install{% endif -%}
 
-{% if ipython %}
+{% if ipython -%}
 # Run ipython
 ipython:
 	@poetry run ipython
 
-{% endif %}
-{% if ruff %}
+{% endif -%}
+{% if pyside6 -%}
+# Launch Qt Designer
+designer *args:
+	@(poetry run pyside6-designer {{ '{{' }} args {{ '}}' }} >/dev/null 2>&1 &)
+
+{% endif -%}
+{% if ruff -%}
 # Run 'ruff'
 ruff *args:
-	@poetry run ruff {{ '{{' args '}}' }} .
+	@poetry run ruff {{ '{{' }} args {{ '}}' }} .
 
 # 'ruff --fix'
 ruff-fix:
@@ -38,50 +41,59 @@ format:
 	@just ruff check --select I --fix
 	@just ruff format
 
-{% endif %}
-{% if black and isort %}
+{% endif -%}
+{% if black and isort -%}
 # Organize imports and format all code
 format:
 	@poetry run isort .
 	@poetry run black .
 
-{% endif %}
-{% if black and not isort %}
+{% endif -%}
+{% if black and not isort -%}
 # Format all code
 format:
 	@poetry run black .
 
-{% endif %}
-{% if mypy %}
+{% endif -%}
+{% if mypy -%}
 # Run mypy
 mypy *args:
-	@poetry run mypy {{ '{{' args '}}' }} .
+	@poetry run mypy {{ '{{' }} args {{ '}}' }} .
 
-{% endif %}
+{% endif -%}
+{% if ruff or mypy -%}
 # Lint code
-lint: format
-{% if ruff %}
-	@just ruff check
-{% endif %}
-{% if mypy %}
-	@just mypy
-{% endif %}
+lint:{% if ruff or black or isort%} format{% endif %}
+{% if ruff %}	@just ruff check{% endif %}
+{% if mypy %}	@just mypy{% endif %}
+{% endif -%}
+{% if pyside6 -%}
+# Compile the `xxx.ui` files to `ui_xxx.py` 
+compile-ui:
+	#!/usr/bin/env sh
+	for input_file in {{ ui_src_path }}/*.ui; do
+		base="${input_file##*/}"
+		output_base="ui_${base%.ui}"
+		output_path="{{ ui_py_path }}/$output_base.py"
+		poetry run pyside6-uic "$input_file" -o "$output_path";
+	done
 
+{% endif -%}
 # Run
-run *args:
-	@poetry run {{ script_name }} {{ '{{' args '}}' }}
+run *args:{% if pyside6 %} compile-ui{% endif %}
+	@poetry run {{ script_name }} {{ '{{' }} args {{ '}}' }}
 
 {% if rich_argparse %}
 # Update the Usage img in README.md
 _update_readme:
 	COLUMNS=$(COLUMNS=$(tput cols) just run --help | head -n 1 | wc -c) just run --make-help-preview
 
-{% endif %}
+{% endif -%}
 # Build project
 build: _setup_poetry
 {% if rich_argparse %}
 	@just _update_readme
-{% endif %}
+{% endif -%}
 	@poetry build
 
 # Install program using pipx

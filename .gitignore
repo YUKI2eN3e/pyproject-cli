@@ -6,3 +6,4 @@ dist/
 
 # Testing
 pytest.toml
+test_justfile

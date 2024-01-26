@@ -11,7 +11,7 @@ def write_pre_commit_config(
     ruff: bool = False,
     mypy: bool = False,
 ) -> None:
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader(path.dirname(__file__)))
     pre_commit_config_template = env.get_template("pre-commit-config.yaml.j2")
     with open(
         path.join(git_root_path, ".pre-commit-config.yaml"), "w", encoding="utf8"

@@ -1,3 +1,4 @@
+from os import path
 from typing import List
 
 from jinja2 import Environment
@@ -7,7 +8,7 @@ from pyproject_cli.templates import _get_min_python_version
 
 
 def add_ruff_settings(pyproject_file: str) -> None:
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader(path.dirname(__file__)))
     ruff_template = env.get_template("ruff.toml.j2")
 
     pyproject: List[str]
