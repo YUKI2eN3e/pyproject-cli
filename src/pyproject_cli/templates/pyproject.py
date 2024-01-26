@@ -52,17 +52,19 @@ def update_pyproject_settings(
     with open(pyproject_file, "rb") as file:
         pyproject = load(file)
 
-    pyproject["tool"]["poetry"]["packages"] = []
-    for package in packages:
-        pyproject["tool"]["poetry"]["packages"].append(  # type: ignore[call-arg]
-            {  # type: ignore[arg-type]
-                "include": _get_package_name(package),
-                "from": _get_src_dir(package),
-            }
-        )
+    if packages != []:
+        pyproject["tool"]["poetry"]["packages"] = []
+        for package in packages:
+            pyproject["tool"]["poetry"]["packages"].append(  # type: ignore[call-arg]
+                {  # type: ignore[arg-type]
+                    "include": _get_package_name(package),
+                    "from": _get_src_dir(package),
+                }
+            )
 
-    pyproject["tool"]["poetry"].add("scripts", table())
-    pyproject["tool"]["poetry"]["scripts"][script_name] = script_string
+    if script_name is not None and script_string is not None:
+        pyproject["tool"]["poetry"].add("scripts", table())
+        pyproject["tool"]["poetry"]["scripts"][script_name] = script_string
 
     if isort:
         pyproject["tool"].add("isort", table())

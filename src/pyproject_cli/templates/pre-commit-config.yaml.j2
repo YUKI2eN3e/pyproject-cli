@@ -10,7 +10,6 @@ repos:
         language: python
         pass_filenames: false
         files: ^(.*/)?pyproject.toml$
-
 {% if isort %}
     -   id: isort
         name: isort
@@ -22,8 +21,7 @@ repos:
         types: [python]
         args: ["--filter-files"]
         language: system
-
-{% endif %}
+{% endif -%}
 {% if black %}
     -   id: black
         name: black
@@ -32,8 +30,7 @@ repos:
         args: ["."]
         language: system
         types: [python]
-
-{% endif %}
+{% endif -%}
 {% if ruff %}
     -   id: ruff-sort
         name: ruff-sort
@@ -58,8 +55,7 @@ repos:
         args: ["check", "."]
         language: system
         types: [python]
-
-{% endif %}
+{% endif -%}
 {% if mypy %}
     -   id: mypy
         name: mypy
@@ -68,4 +64,4 @@ repos:
         args: []
         language: system
         types: [python]
-{% endif %}
+{% endif -%}

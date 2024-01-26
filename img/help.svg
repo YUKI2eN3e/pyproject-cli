@@ -1,0 +1,191 @@
+<svg class="rich-terminal" viewBox="0 0 2446 855.1999999999999" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-1823000481-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-1823000481-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-1823000481-r1 { fill: #ff8700 }
+.terminal-1823000481-r2 { fill: #c5c8c6 }
+.terminal-1823000481-r3 { fill: #808080 }
+.terminal-1823000481-r4 { fill: #68a0b3 }
+.terminal-1823000481-r5 { fill: #00af87 }
+.terminal-1823000481-r6 { fill: #c5c8c6;font-weight: bold }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-1823000481-clip-terminal">
+      <rect x="0" y="0" width="2426.7999999999997" height="804.1999999999999" />
+    </clipPath>
+    <clipPath id="terminal-1823000481-line-0">
+    <rect x="0" y="1.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-1">
+    <rect x="0" y="25.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-2">
+    <rect x="0" y="50.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-3">
+    <rect x="0" y="74.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-4">
+    <rect x="0" y="99.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-5">
+    <rect x="0" y="123.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-6">
+    <rect x="0" y="147.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-7">
+    <rect x="0" y="172.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-8">
+    <rect x="0" y="196.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-9">
+    <rect x="0" y="221.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-10">
+    <rect x="0" y="245.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-11">
+    <rect x="0" y="269.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-12">
+    <rect x="0" y="294.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-13">
+    <rect x="0" y="318.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-14">
+    <rect x="0" y="343.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-15">
+    <rect x="0" y="367.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-16">
+    <rect x="0" y="391.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-17">
+    <rect x="0" y="416.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-18">
+    <rect x="0" y="440.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-19">
+    <rect x="0" y="465.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-20">
+    <rect x="0" y="489.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-21">
+    <rect x="0" y="513.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-22">
+    <rect x="0" y="538.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-23">
+    <rect x="0" y="562.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-24">
+    <rect x="0" y="587.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-25">
+    <rect x="0" y="611.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-26">
+    <rect x="0" y="635.9" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-27">
+    <rect x="0" y="660.3" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-28">
+    <rect x="0" y="684.7" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-29">
+    <rect x="0" y="709.1" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-30">
+    <rect x="0" y="733.5" width="2427.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1823000481-line-31">
+    <rect x="0" y="757.9" width="2427.8" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="2444" height="853.2" rx="8"/>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-1823000481-clip-terminal)">
+    
+    <g class="terminal-1823000481-matrix">
+    <text class="terminal-1823000481-r1" x="0" y="20" textLength="73.2" clip-path="url(#terminal-1823000481-line-0)">Usage:</text><text class="terminal-1823000481-r3" x="85.4" y="20" textLength="158.6" clip-path="url(#terminal-1823000481-line-0)">pyproject-cli</text><text class="terminal-1823000481-r2" x="244" y="20" textLength="24.4" clip-path="url(#terminal-1823000481-line-0)">&#160;[</text><text class="terminal-1823000481-r4" x="268.4" y="20" textLength="24.4" clip-path="url(#terminal-1823000481-line-0)">-h</text><text class="terminal-1823000481-r2" x="292.8" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="329.4" y="20" textLength="24.4" clip-path="url(#terminal-1823000481-line-0)">-N</text><text class="terminal-1823000481-r5" x="366" y="20" textLength="134.2" clip-path="url(#terminal-1823000481-line-0)">SCRIPT_NAME</text><text class="terminal-1823000481-r2" x="500.2" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="536.8" y="20" textLength="24.4" clip-path="url(#terminal-1823000481-line-0)">-S</text><text class="terminal-1823000481-r5" x="573.4" y="20" textLength="158.6" clip-path="url(#terminal-1823000481-line-0)">SCRIPT_STRING</text><text class="terminal-1823000481-r2" x="732" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="768.6" y="20" textLength="24.4" clip-path="url(#terminal-1823000481-line-0)">-P</text><text class="terminal-1823000481-r5" x="805.2" y="20" textLength="280.6" clip-path="url(#terminal-1823000481-line-0)">PACKAGES&#160;[PACKAGES&#160;...]</text><text class="terminal-1823000481-r2" x="1085.8" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="1122.4" y="20" textLength="183" clip-path="url(#terminal-1823000481-line-0)">--rich-argparse</text><text class="terminal-1823000481-r2" x="1305.4" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="1342" y="20" textLength="48.8" clip-path="url(#terminal-1823000481-line-0)">--qt</text><text class="terminal-1823000481-r2" x="1390.8" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="1427.4" y="20" textLength="97.6" clip-path="url(#terminal-1823000481-line-0)">--ui-src</text><text class="terminal-1823000481-r5" x="1537.2" y="20" textLength="134.2" clip-path="url(#terminal-1823000481-line-0)">UI_SRC_PATH</text><text class="terminal-1823000481-r2" x="1671.4" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="1708" y="20" textLength="85.4" clip-path="url(#terminal-1823000481-line-0)">--ui-py</text><text class="terminal-1823000481-r5" x="1805.6" y="20" textLength="122" clip-path="url(#terminal-1823000481-line-0)">UI_PY_PATH</text><text class="terminal-1823000481-r2" x="1927.6" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="1964.2" y="20" textLength="73.2" clip-path="url(#terminal-1823000481-line-0)">--ruff</text><text class="terminal-1823000481-r2" x="2037.4" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="2074" y="20" textLength="85.4" clip-path="url(#terminal-1823000481-line-0)">--black</text><text class="terminal-1823000481-r2" x="2159.4" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="2196" y="20" textLength="85.4" clip-path="url(#terminal-1823000481-line-0)">--isort</text><text class="terminal-1823000481-r2" x="2281.4" y="20" textLength="36.6" clip-path="url(#terminal-1823000481-line-0)">]&#160;[</text><text class="terminal-1823000481-r4" x="2318" y="20" textLength="73.2" clip-path="url(#terminal-1823000481-line-0)">--mypy</text><text class="terminal-1823000481-r2" x="2391.2" y="20" textLength="12.2" clip-path="url(#terminal-1823000481-line-0)">]</text><text class="terminal-1823000481-r2" x="2427.8" y="20" textLength="12.2" clip-path="url(#terminal-1823000481-line-0)">
+</text><text class="terminal-1823000481-r2" x="0" y="44.4" textLength="268.4" clip-path="url(#terminal-1823000481-line-1)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[</text><text class="terminal-1823000481-r4" x="268.4" y="44.4" textLength="146.4" clip-path="url(#terminal-1823000481-line-1)">--pre-commit</text><text class="terminal-1823000481-r2" x="414.8" y="44.4" textLength="36.6" clip-path="url(#terminal-1823000481-line-1)">]&#160;[</text><text class="terminal-1823000481-r4" x="451.4" y="44.4" textLength="109.8" clip-path="url(#terminal-1823000481-line-1)">--ipython</text><text class="terminal-1823000481-r2" x="561.2" y="44.4" textLength="36.6" clip-path="url(#terminal-1823000481-line-1)">]&#160;[</text><text class="terminal-1823000481-r4" x="597.8" y="44.4" textLength="24.4" clip-path="url(#terminal-1823000481-line-1)">-v</text><text class="terminal-1823000481-r2" x="622.2" y="44.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-1)">]</text><text class="terminal-1823000481-r2" x="2427.8" y="44.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-1)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="68.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-2)">
+</text><text class="terminal-1823000481-r1" x="0" y="93.2" textLength="97.6" clip-path="url(#terminal-1823000481-line-3)">Options:</text><text class="terminal-1823000481-r2" x="2427.8" y="93.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-3)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="117.6" textLength="24.4" clip-path="url(#terminal-1823000481-line-4)">-h</text><text class="terminal-1823000481-r2" x="48.8" y="117.6" textLength="24.4" clip-path="url(#terminal-1823000481-line-4)">,&#160;</text><text class="terminal-1823000481-r4" x="73.2" y="117.6" textLength="73.2" clip-path="url(#terminal-1823000481-line-4)">--help</text><text class="terminal-1823000481-r2" x="292.8" y="117.6" textLength="378.2" clip-path="url(#terminal-1823000481-line-4)">show&#160;this&#160;help&#160;message&#160;and&#160;exit</text><text class="terminal-1823000481-r2" x="2427.8" y="117.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-4)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="142" textLength="24.4" clip-path="url(#terminal-1823000481-line-5)">-v</text><text class="terminal-1823000481-r2" x="48.8" y="142" textLength="24.4" clip-path="url(#terminal-1823000481-line-5)">,&#160;</text><text class="terminal-1823000481-r4" x="73.2" y="142" textLength="109.8" clip-path="url(#terminal-1823000481-line-5)">--version</text><text class="terminal-1823000481-r2" x="292.8" y="142" textLength="463.6" clip-path="url(#terminal-1823000481-line-5)">show&#160;program&#x27;s&#160;version&#160;number&#160;and&#160;exit</text><text class="terminal-1823000481-r2" x="2427.8" y="142" textLength="12.2" clip-path="url(#terminal-1823000481-line-5)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="166.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-6)">
+</text><text class="terminal-1823000481-r1" x="0" y="190.8" textLength="195.2" clip-path="url(#terminal-1823000481-line-7)">Poetry&#160;Settings:</text><text class="terminal-1823000481-r2" x="2427.8" y="190.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-7)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="215.2" textLength="24.4" clip-path="url(#terminal-1823000481-line-8)">-N</text><text class="terminal-1823000481-r2" x="48.8" y="215.2" textLength="24.4" clip-path="url(#terminal-1823000481-line-8)">,&#160;</text><text class="terminal-1823000481-r4" x="73.2" y="215.2" textLength="158.6" clip-path="url(#terminal-1823000481-line-8)">--script-name</text><text class="terminal-1823000481-r5" x="244" y="215.2" textLength="134.2" clip-path="url(#terminal-1823000481-line-8)">SCRIPT_NAME</text><text class="terminal-1823000481-r2" x="2427.8" y="215.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-8)">
+</text><text class="terminal-1823000481-r2" x="292.8" y="239.6" textLength="378.2" clip-path="url(#terminal-1823000481-line-9)">the&#160;name&#160;of&#160;the&#160;script&#160;in&#160;the&#160;`</text><text class="terminal-1823000481-r6" x="671" y="239.6" textLength="231.8" clip-path="url(#terminal-1823000481-line-9)">tool.poetry.scripts</text><text class="terminal-1823000481-r2" x="902.8" y="239.6" textLength="170.8" clip-path="url(#terminal-1823000481-line-9)">`&#160;section&#160;of&#160;`</text><text class="terminal-1823000481-r6" x="1073.6" y="239.6" textLength="170.8" clip-path="url(#terminal-1823000481-line-9)">pyproject.toml</text><text class="terminal-1823000481-r2" x="1244.4" y="239.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-9)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="239.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-9)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="264" textLength="24.4" clip-path="url(#terminal-1823000481-line-10)">-S</text><text class="terminal-1823000481-r2" x="48.8" y="264" textLength="24.4" clip-path="url(#terminal-1823000481-line-10)">,&#160;</text><text class="terminal-1823000481-r4" x="73.2" y="264" textLength="183" clip-path="url(#terminal-1823000481-line-10)">--script-string</text><text class="terminal-1823000481-r5" x="268.4" y="264" textLength="158.6" clip-path="url(#terminal-1823000481-line-10)">SCRIPT_STRING</text><text class="terminal-1823000481-r2" x="2427.8" y="264" textLength="12.2" clip-path="url(#terminal-1823000481-line-10)">
+</text><text class="terminal-1823000481-r2" x="292.8" y="288.4" textLength="536.8" clip-path="url(#terminal-1823000481-line-11)">the&#160;entrypoint&#160;string&#160;of&#160;the&#160;script&#160;in&#160;the&#160;`</text><text class="terminal-1823000481-r6" x="829.6" y="288.4" textLength="231.8" clip-path="url(#terminal-1823000481-line-11)">tool.poetry.scripts</text><text class="terminal-1823000481-r2" x="1061.4" y="288.4" textLength="170.8" clip-path="url(#terminal-1823000481-line-11)">`&#160;section&#160;of&#160;`</text><text class="terminal-1823000481-r6" x="1232.2" y="288.4" textLength="170.8" clip-path="url(#terminal-1823000481-line-11)">pyproject.toml</text><text class="terminal-1823000481-r2" x="1403" y="288.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-11)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="288.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-11)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="312.8" textLength="24.4" clip-path="url(#terminal-1823000481-line-12)">-P</text><text class="terminal-1823000481-r2" x="48.8" y="312.8" textLength="24.4" clip-path="url(#terminal-1823000481-line-12)">,&#160;</text><text class="terminal-1823000481-r4" x="73.2" y="312.8" textLength="122" clip-path="url(#terminal-1823000481-line-12)">--packages</text><text class="terminal-1823000481-r5" x="207.4" y="312.8" textLength="280.6" clip-path="url(#terminal-1823000481-line-12)">PACKAGES&#160;[PACKAGES&#160;...]</text><text class="terminal-1823000481-r2" x="2427.8" y="312.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-12)">
+</text><text class="terminal-1823000481-r2" x="292.8" y="337.2" textLength="317.2" clip-path="url(#terminal-1823000481-line-13)">the&#160;packages&#160;included&#160;in&#160;`</text><text class="terminal-1823000481-r6" x="610" y="337.2" textLength="170.8" clip-path="url(#terminal-1823000481-line-13)">pyproject.toml</text><text class="terminal-1823000481-r2" x="780.8" y="337.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-13)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="337.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-13)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="361.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-14)">
+</text><text class="terminal-1823000481-r1" x="0" y="386" textLength="256.2" clip-path="url(#terminal-1823000481-line-15)">Interactive&#160;Packages:</text><text class="terminal-1823000481-r2" x="2427.8" y="386" textLength="12.2" clip-path="url(#terminal-1823000481-line-15)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="410.4" textLength="183" clip-path="url(#terminal-1823000481-line-16)">--rich-argparse</text><text class="terminal-1823000481-r2" x="292.8" y="410.4" textLength="524.6" clip-path="url(#terminal-1823000481-line-16)">use&#160;if&#160;you&#160;are&#160;using&#160;rich-argparse&#160;with&#160;a&#160;`</text><text class="terminal-1823000481-r6" x="817.4" y="410.4" textLength="231.8" clip-path="url(#terminal-1823000481-line-16)">--make-help-preview</text><text class="terminal-1823000481-r2" x="1049.2" y="410.4" textLength="463.6" clip-path="url(#terminal-1823000481-line-16)">`&#160;arg&#160;and&#160;what&#160;it&#160;called&#160;when&#160;building</text><text class="terminal-1823000481-r2" x="2427.8" y="410.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-16)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="434.8" textLength="48.8" clip-path="url(#terminal-1823000481-line-17)">--qt</text><text class="terminal-1823000481-r2" x="73.2" y="434.8" textLength="24.4" clip-path="url(#terminal-1823000481-line-17)">,&#160;</text><text class="terminal-1823000481-r4" x="97.6" y="434.8" textLength="109.8" clip-path="url(#terminal-1823000481-line-17)">--pyside6</text><text class="terminal-1823000481-r2" x="292.8" y="434.8" textLength="671" clip-path="url(#terminal-1823000481-line-17)">use&#160;if&#160;you&#160;are&#160;using&#160;PySide6&#160;and&#160;want&#160;to&#160;compile&#160;your&#160;`</text><text class="terminal-1823000481-r6" x="963.8" y="434.8" textLength="36.6" clip-path="url(#terminal-1823000481-line-17)">.ui</text><text class="terminal-1823000481-r2" x="1000.4" y="434.8" textLength="646.6" clip-path="url(#terminal-1823000481-line-17)">`&#160;files&#160;on&#160;run/build&#160;as&#160;well&#160;as&#160;launch&#160;Designer&#160;via&#160;`</text><text class="terminal-1823000481-r6" x="1647" y="434.8" textLength="48.8" clip-path="url(#terminal-1823000481-line-17)">just</text><text class="terminal-1823000481-r2" x="1695.8" y="434.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-17)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="434.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-17)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="459.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-18)">
+</text><text class="terminal-1823000481-r1" x="0" y="483.6" textLength="109.8" clip-path="url(#terminal-1823000481-line-19)">Ui&#160;Paths:</text><text class="terminal-1823000481-r2" x="2427.8" y="483.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-19)">
+</text><text class="terminal-1823000481-r2" x="24.4" y="508" textLength="366" clip-path="url(#terminal-1823000481-line-20)">Only&#160;required&#160;if&#160;using&#160;PySide6</text><text class="terminal-1823000481-r2" x="2427.8" y="508" textLength="12.2" clip-path="url(#terminal-1823000481-line-20)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="532.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-21)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="556.8" textLength="97.6" clip-path="url(#terminal-1823000481-line-22)">--ui-src</text><text class="terminal-1823000481-r5" x="134.2" y="556.8" textLength="134.2" clip-path="url(#terminal-1823000481-line-22)">UI_SRC_PATH</text><text class="terminal-1823000481-r2" x="292.8" y="556.8" textLength="219.6" clip-path="url(#terminal-1823000481-line-22)">the&#160;path&#160;to&#160;your&#160;`</text><text class="terminal-1823000481-r6" x="512.4" y="556.8" textLength="36.6" clip-path="url(#terminal-1823000481-line-22)">.ui</text><text class="terminal-1823000481-r2" x="549" y="556.8" textLength="85.4" clip-path="url(#terminal-1823000481-line-22)">`&#160;files</text><text class="terminal-1823000481-r2" x="2427.8" y="556.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-22)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="581.2" textLength="85.4" clip-path="url(#terminal-1823000481-line-23)">--ui-py</text><text class="terminal-1823000481-r2" x="109.8" y="581.2" textLength="24.4" clip-path="url(#terminal-1823000481-line-23)">,&#160;</text><text class="terminal-1823000481-r4" x="134.2" y="581.2" textLength="97.6" clip-path="url(#terminal-1823000481-line-23)">--ui-out</text><text class="terminal-1823000481-r5" x="244" y="581.2" textLength="122" clip-path="url(#terminal-1823000481-line-23)">UI_PY_PATH</text><text class="terminal-1823000481-r2" x="2427.8" y="581.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-23)">
+</text><text class="terminal-1823000481-r2" x="292.8" y="605.6" textLength="475.8" clip-path="url(#terminal-1823000481-line-24)">the&#160;path&#160;where&#160;you&#160;want&#160;your&#160;compiled&#160;`</text><text class="terminal-1823000481-r6" x="768.6" y="605.6" textLength="36.6" clip-path="url(#terminal-1823000481-line-24)">.ui</text><text class="terminal-1823000481-r2" x="805.2" y="605.6" textLength="244" clip-path="url(#terminal-1823000481-line-24)">`&#160;files&#160;to&#160;be&#160;placed</text><text class="terminal-1823000481-r2" x="2427.8" y="605.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-24)">
+</text><text class="terminal-1823000481-r2" x="2427.8" y="630" textLength="12.2" clip-path="url(#terminal-1823000481-line-25)">
+</text><text class="terminal-1823000481-r1" x="0" y="654.4" textLength="158.6" clip-path="url(#terminal-1823000481-line-26)">Enable&#160;Tools:</text><text class="terminal-1823000481-r2" x="2427.8" y="654.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-26)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="678.8" textLength="73.2" clip-path="url(#terminal-1823000481-line-27)">--ruff</text><text class="terminal-1823000481-r2" x="292.8" y="678.8" textLength="97.6" clip-path="url(#terminal-1823000481-line-27)">enable&#160;`</text><text class="terminal-1823000481-r6" x="390.4" y="678.8" textLength="48.8" clip-path="url(#terminal-1823000481-line-27)">ruff</text><text class="terminal-1823000481-r2" x="439.2" y="678.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-27)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="678.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-27)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="703.2" textLength="85.4" clip-path="url(#terminal-1823000481-line-28)">--black</text><text class="terminal-1823000481-r2" x="292.8" y="703.2" textLength="97.6" clip-path="url(#terminal-1823000481-line-28)">enable&#160;`</text><text class="terminal-1823000481-r6" x="390.4" y="703.2" textLength="61" clip-path="url(#terminal-1823000481-line-28)">black</text><text class="terminal-1823000481-r2" x="451.4" y="703.2" textLength="305" clip-path="url(#terminal-1823000481-line-28)">`&#160;(unnecessary&#160;if&#160;using&#160;`</text><text class="terminal-1823000481-r6" x="756.4" y="703.2" textLength="48.8" clip-path="url(#terminal-1823000481-line-28)">ruff</text><text class="terminal-1823000481-r2" x="805.2" y="703.2" textLength="24.4" clip-path="url(#terminal-1823000481-line-28)">`)</text><text class="terminal-1823000481-r2" x="2427.8" y="703.2" textLength="12.2" clip-path="url(#terminal-1823000481-line-28)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="727.6" textLength="85.4" clip-path="url(#terminal-1823000481-line-29)">--isort</text><text class="terminal-1823000481-r2" x="292.8" y="727.6" textLength="97.6" clip-path="url(#terminal-1823000481-line-29)">enable&#160;`</text><text class="terminal-1823000481-r6" x="390.4" y="727.6" textLength="61" clip-path="url(#terminal-1823000481-line-29)">isort</text><text class="terminal-1823000481-r2" x="451.4" y="727.6" textLength="305" clip-path="url(#terminal-1823000481-line-29)">`&#160;(unnecessary&#160;if&#160;using&#160;`</text><text class="terminal-1823000481-r6" x="756.4" y="727.6" textLength="48.8" clip-path="url(#terminal-1823000481-line-29)">ruff</text><text class="terminal-1823000481-r2" x="805.2" y="727.6" textLength="24.4" clip-path="url(#terminal-1823000481-line-29)">`)</text><text class="terminal-1823000481-r2" x="2427.8" y="727.6" textLength="12.2" clip-path="url(#terminal-1823000481-line-29)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="752" textLength="73.2" clip-path="url(#terminal-1823000481-line-30)">--mypy</text><text class="terminal-1823000481-r2" x="292.8" y="752" textLength="97.6" clip-path="url(#terminal-1823000481-line-30)">enable&#160;`</text><text class="terminal-1823000481-r6" x="390.4" y="752" textLength="48.8" clip-path="url(#terminal-1823000481-line-30)">mypy</text><text class="terminal-1823000481-r2" x="439.2" y="752" textLength="12.2" clip-path="url(#terminal-1823000481-line-30)">`</text><text class="terminal-1823000481-r2" x="2427.8" y="752" textLength="12.2" clip-path="url(#terminal-1823000481-line-30)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="776.4" textLength="146.4" clip-path="url(#terminal-1823000481-line-31)">--pre-commit</text><text class="terminal-1823000481-r2" x="292.8" y="776.4" textLength="488" clip-path="url(#terminal-1823000481-line-31)">pre-commit&#160;is&#160;installed&#160;in&#160;the&#160;pyproject</text><text class="terminal-1823000481-r2" x="2427.8" y="776.4" textLength="12.2" clip-path="url(#terminal-1823000481-line-31)">
+</text><text class="terminal-1823000481-r4" x="24.4" y="800.8" textLength="109.8" clip-path="url(#terminal-1823000481-line-32)">--ipython</text><text class="terminal-1823000481-r2" x="292.8" y="800.8" textLength="451.4" clip-path="url(#terminal-1823000481-line-32)">ipython&#160;is&#160;installed&#160;in&#160;the&#160;pyproject</text><text class="terminal-1823000481-r2" x="2427.8" y="800.8" textLength="12.2" clip-path="url(#terminal-1823000481-line-32)">
+</text>
+    </g>
+    </g>
+</svg>

@@ -1,5 +1,6 @@
 from argparse import ArgumentParser
 from dataclasses import dataclass
+from importlib import metadata
 from os import path
 from sys import argv
 from typing import List
@@ -25,8 +26,28 @@ class CliArgs:
     ruff: bool
     black: bool
     isort: bool
+    mypy: bool
     pre_commit: bool
     ipython: bool
+
+    @property
+    def update_pyproject(self) -> bool:
+        return (
+            self.script_name is not None
+            or self.script_string is not None
+            or self.packages != []
+            or self.ruff
+            or self.black
+            or self.isort
+        )
+
+    @property
+    def just_isort(self) -> bool:
+        return self.isort and not self.ruff
+
+    @property
+    def just_black(self) -> bool:
+        return self.black and not self.ruff
 
 
 def get_args() -> CliArgs:
@@ -46,6 +67,7 @@ def get_args() -> CliArgs:
         "-N",
         "--script-name",
         dest="script_name",
+        default=None,
         required=setting_script,
         help="the name of the script in the `tool.poetry.scripts` section of `pyproject.toml`",
     )
@@ -53,6 +75,7 @@ def get_args() -> CliArgs:
         "-S",
         "--script-string",
         dest="script_string",
+        default=None,
         required=setting_script,
         help="the entrypoint string of the script in the `tool.poetry.scripts` section of `pyproject.toml`",
     )
@@ -61,6 +84,7 @@ def get_args() -> CliArgs:
         "--packages",
         dest="packages",
         nargs="+",
+        default=[],
         help="the packages included in `pyproject.toml`",
     )
 
@@ -120,6 +144,9 @@ def get_args() -> CliArgs:
         help="enable `isort` (unnecessary if using `ruff`)",
     )
     enable_tools.add_argument(
+        "--mypy", dest="mypy", action="store_true", default=False, help="enable `mypy`"
+    )
+    enable_tools.add_argument(
         "--pre-commit",
         dest="pre_commit",
         action="store_true",
@@ -132,6 +159,13 @@ def get_args() -> CliArgs:
         action="store_true",
         default=False,
         help="ipython is installed in the pyproject",
+    )
+
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version=f"[bold][{RichHelpFormatter.styles['argparse.prog']}]{prog_name}[/] [{RichHelpFormatter.styles['argparse.metavar']}]v{metadata.version(module_name)}[/][/bold]",
     )
 
     if "--make-help-preview" in argv:
